@@ -34,6 +34,7 @@ jobs:
         run: conda env list
       
       - name: Run the ambient weather api script
+        shell: bash -l {0}
         run: python scripts/ambient_weather/process_ambient_data.py
       
       - name: Commit new changes
