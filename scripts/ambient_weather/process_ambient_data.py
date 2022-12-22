@@ -7,6 +7,8 @@ import xarray as xr
 import os
 from pathlib import Path
 
+print(os.getenv('AMBIENT_ENDPOINT'))
+
 # Access the Ambient weather API and get the devices available
 api = AmbientAPI()
 devices = api.get_devices()
