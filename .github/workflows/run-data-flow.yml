@@ -1,0 +1,44 @@
+name: data-flow
+
+on:
+  schedule:
+    - cron: '5 * * * *' # run hourly
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup miniconda environment
+        uses: conda-incubator/setup-miniconda@master
+        with:
+          channels: conda-forge,nodefaults
+          channel-priority: strict
+          activate-environment: xdev
+          auto-update-conda: false
+          python-version: 3.9
+          environment-file: environment.yml
+          mamba-version: '*'
+          use-mamba: true
+
+      - name: Verify environment installation
+        run: conda env list
+      
+      - name: Run the ambient weather api script
+        run: python scripts/ambient_weather/process_ambient_data.py
+      
+      - name: Commit new changes
+        uses: EndBug/add-and-commit@v8
+        with:
+          add: '-A'
+          default_author: github_actions
+          message: '[skip ci] Hourly data updates'
