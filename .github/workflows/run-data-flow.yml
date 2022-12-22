@@ -35,6 +35,10 @@ jobs:
       
       - name: Run the ambient weather api script
         shell: bash -l {0}
+        env:
+          AMBIENT_API_KEY: '${{ secrets.AMBIENT_API_KEY }}'
+          AMBIENT_APPLICATION_KEY: '${{ secrets.AMBIENT_APPLICATION_KEY }}'
+          AMBIENT_ENDPOINT: '${{ secrets.AMBIENT_ENDPOINT }}'
         run: python scripts/ambient_weather/process_ambient_data.py
       
       - name: Commit new changes
