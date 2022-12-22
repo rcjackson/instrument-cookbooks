@@ -1,4 +1,4 @@
-name: arm-cookbook-dev
+name: instrument-cookbooks-dev
 channels:
   - conda-forge
   - defaults
