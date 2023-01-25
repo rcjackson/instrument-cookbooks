@@ -1,6 +1,9 @@
 format: jb-book
 root: README
 parts:
-- caption: Notebooks
+- caption: Ambient Weather Stations
   chapters:
-    - glob: Notebooks/*
+    - glob: notebooks/ambient-weather/*
+- caption: Doppler Lidar
+  chapters:
+   - glob: notebooks/doppler-lidar/*
