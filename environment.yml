@@ -1,7 +1,6 @@
 name: instrument-cookbooks-dev
 channels:
   - conda-forge
-  - defaults
   - pyviz
 dependencies:
   - python
