@@ -1,13 +1,10 @@
 name: instrument-cookbooks-dev
 channels:
   - conda-forge
-  - pyviz
 dependencies:
   - python
-  - arm_pyart
   - matplotlib
   - jupyterlab
-  - cartopy
   - numpy
   - dask
   - distributed
