@@ -22,11 +22,11 @@ jobs:
       - name: Setup miniconda environment
         uses: conda-incubator/setup-miniconda@main
         with:
-          channels: conda-forge,nodefaults
+          channels: conda-forge
           channel-priority: strict
           activate-environment: instrument-cookbooks-dev
           auto-update-conda: false
-          python-version: 3.9
+          python-version: 3.10
           environment-file: environment.yml
           mamba-version: '*'
           use-mamba: true
