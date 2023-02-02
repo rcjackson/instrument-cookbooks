@@ -1,4 +1,4 @@
 jupyter-book
-jsonschema>4.17
+jsonschema>3
 jupyterlab
 ghp-import
