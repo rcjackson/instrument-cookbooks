@@ -1,6 +1,9 @@
 format: jb-book
 root: README
 parts:
+- caption: Data Access
+  chapters:
+    - file: data-access.md
 - caption: Ambient Weather Stations
   chapters:
     - glob: notebooks/ambient-weather/*
