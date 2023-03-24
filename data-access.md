@@ -7,6 +7,11 @@ Globus is a free software that allows to safely transfer data between two differ
 We encourage you to read over the how to get started guide from their documentation
 - [Link to getting started with globus](https://docs.globus.org/how-to/get-started/)
 
+<div class="admonition alert alert-warning">
+    <p class="admonition-title" style="font-weight:bold">Warning</p>
+    The datasets have not been quality corrected or controlled. This is raw data.
+</div>
+
 ## Doppler LiDAR
 
 The Doppler LiDAR instrument collects information about the velocity and scattering properties across different times and distances from the instrument, which in most cases for this project, is the ground.
