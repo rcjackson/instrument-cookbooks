@@ -1,6 +1,6 @@
-title: SAIL X-Band Radar Precipitation
-author: ARM Development Team
-logo: notebooks/images/arm_logo.png
+title: CROCUS Instrument Cookbooks
+author: CROCUS Measurement Strategy Team
+logo: notebooks/images/CROCUS_Logo.svg
 execute:
   execute_notebooks: "off"
 parse:
@@ -19,7 +19,7 @@ html:
   comments:
     hypothesis: true
 repository:
-  url: https://github.com/ARM-Development/sail-xprecip-radar  # Online location of your book
+  url: https://github.com/CROCUS-Urban/instrument-cookbooks  # Online location of your book
   path_to_book: notebooks  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 launch_buttons:
