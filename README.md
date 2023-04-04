@@ -1,6 +1,6 @@
 # CROCUS Instrument Cookbooks
 
-image:: ./notebooks/images/CROCUS_Logo.svg
+![CROCUS Logo](notebooks/images/CROCUS_Logo.svg)
 
 This is a Github repository to host exploration of [CROCUS](https://www.anl.gov/crocus) instrumentation and data. 
 
