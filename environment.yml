@@ -5,6 +5,7 @@ channels:
   - pyviz
 dependencies:
   - arm_pyart
+  - act-atmos
   - matplotlib
   - jupyterlab
   - cartopy
@@ -18,3 +19,4 @@ dependencies:
   - pip:
     - -r doc-requirements.txt
     - ambient-api
+    - sage-data-client

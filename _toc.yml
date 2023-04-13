@@ -10,3 +10,6 @@ parts:
 - caption: Doppler Lidar
   chapters:
    - glob: notebooks/doppler-lidar/*
+- caption: CROCUS Level 1 Node
+  chapters:
+   - glob: notebooks/crocus_level1_node/*
