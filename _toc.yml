@@ -4,6 +4,9 @@ parts:
 - caption: Data Access
   chapters:
     - file: data-access.md
+- caption: Data Transformation
+  chapters:
+    - glob: notebooks/data-transformation/*
 - caption: Ambient Weather Stations
   chapters:
     - glob: notebooks/ambient-weather/*
