@@ -71,7 +71,7 @@ for device in devices:
         full_path = Path(f'../../data/surface-meteorology/{time_label}')
         if not os.path.exists(full_path.parent):
             os.makedirs(full_path.parent)
-        ds.to_netcdf(full_file)
+        ds.to_netcdf(full_path)
     except:
         pass
     time.sleep(10)
