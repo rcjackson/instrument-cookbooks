@@ -67,7 +67,7 @@ for device in devices:
         print(device)
         ds = process_station(device)
         site = f'{ds.station.values[0]}'
-        time_label = pd.to_datetime(ds.time.values[0]).strftime(f'{site}.%Y%m%d.000000.nc')
+        time_label = pd.to_datetime(ds.time.values[0]).strftime(f'{site}.a1.%Y%m%d.000000.nc')
         full_file = f'../../data/surface-meteorology/{time_label}'
         if not os.path.exists(full_path.parent):
             os.makedirs(full_path.parent)
