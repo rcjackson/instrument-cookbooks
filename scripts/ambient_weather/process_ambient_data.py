@@ -15,17 +15,11 @@ devices = api.get_devices()
 
 attrs_dict = {'tempf':{'standard_name': 'Temperature',
                        'units': 'degF'},
-              'tempinf':{'standard_name': 'Temperature',
-                         'units': 'degF'},
               'dewPoint': {'standard_name': 'Dewpoint Temperature',
-                           'units': 'degF'},
-              'dewPointin': {'standard_name': 'Dewpoint Temperature',
-                             'units': 'degF'}}
+                           'units': 'degF'}}
 
 variable_mapping = {'tempf':'outdoor_temperature',
-                    'tempinf':'indoor_temperature',
                     'dewPoint':'outdoor_dewpoint',
-                    'dewPointin':'indoor_dewpoint',
                     'date':'time'}
 
 
