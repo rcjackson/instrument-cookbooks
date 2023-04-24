@@ -15,17 +15,11 @@ devices = api.get_devices()
 
 attrs_dict = {'tempf':{'standard_name': 'Temperature',
                        'units': 'degF'},
-              'tempinf':{'standard_name': 'Temperature',
-                         'units': 'degF'},
               'dewPoint': {'standard_name': 'Dewpoint Temperature',
-                           'units': 'degF'},
-              'dewPointin': {'standard_name': 'Dewpoint Temperature',
-                             'units': 'degF'}}
+                           'units': 'degF'}}
 
 variable_mapping = {'tempf':'outdoor_temperature',
-                    'tempinf':'indoor_temperature',
                     'dewPoint':'outdoor_dewpoint',
-                    'dewPointin':'indoor_dewpoint',
                     'date':'time'}
 
 
@@ -71,18 +65,13 @@ dsets = []
 for device in devices:
     try:
         print(device)
-        dsets.append(process_station(device))
+        ds = process_station(device)
+        site = f'{ds.station.values[0]}'
+        time_label = pd.to_datetime(ds.time.values[0]).strftime(f'%Y/%m/%d/{site}.a1.%Y%m%d.000000.nc')
+        full_path = Path(f'../../data/surface-meteorology/{time_label}')
+        if not os.path.exists(full_path.parent):
+            os.makedirs(full_path.parent)
+        ds.to_netcdf(full_path)
     except:
         pass
     time.sleep(10)
-ds = xr.concat(dsets, dim='station')
-
-
-# Save the data to a file
-end_time = ds.isel(time=-1)
-time_label = pd.to_datetime(end_time.time.values).strftime('%Y/%m/%d/ambient.a1.%Y%m%d.nc')
-full_file = f'../../data/surface-meteorology/{time_label}'
-full_path = Path(full_file)
-if not os.path.exists(full_path.parent):
-    os.makedirs(full_path.parent)
-ds.to_netcdf(full_file)
