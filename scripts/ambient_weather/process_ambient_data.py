@@ -74,4 +74,4 @@ for device in devices:
         ds.to_netcdf(full_path)
     except:
         pass
-    time.sleep(10)
+    time.sleep(20)
