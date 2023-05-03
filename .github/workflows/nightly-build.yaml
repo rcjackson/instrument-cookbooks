@@ -10,7 +10,7 @@ jobs:
     if: ${{ github.repository_owner == 'CROCUS-Urban' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
-      environment_name: radar-cookbook-dev
+      environment_name: instrument-cookbooks-dev
       environment_file: environment.yml
       path_to_notebooks: ./
 
@@ -18,6 +18,6 @@ jobs:
     if: ${{ github.repository_owner == 'CROCUS-Urban' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
     with:
-      environment_name: radar-cookbook-dev
+      environment_name: instrument-cookbooks-dev
       environment_file: environment.yml
       path_to_notebooks: ./
