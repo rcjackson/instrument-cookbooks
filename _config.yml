@@ -2,7 +2,9 @@ title: CROCUS Instrument Cookbooks
 author: CROCUS Measurement Strategy Team
 logo: notebooks/images/CROCUS_Logo.svg
 execute:
-  execute_notebooks: "off"
+  execute_notebooks: cache
+  timeout: 600
+  allow_errors: False  # cells with expected failures must set the `raises-exception` cell tag
 parse:
   myst_enable_extensions:
     - html_image
