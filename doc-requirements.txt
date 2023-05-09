@@ -2,3 +2,11 @@ jupyter-book
 jsonschema>3
 jupyterlab
 ghp-import
+sage-data-client
+hvplot
+cartopy
+xarray
+act-atmos
+metpy
+numpy
+pandas
