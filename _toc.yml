@@ -7,9 +7,6 @@ parts:
 - caption: Quick Looks (Recent Data)
   chapters:
     - glob: notebooks/quicklooks/*
-- caption: Data Transformation
-  chapters:
-    - glob: notebooks/data-transformation/*
 - caption: Ambient Weather Stations
   chapters:
     - glob: notebooks/ambient-weather/*
