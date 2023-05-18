@@ -7,6 +7,9 @@ parts:
 - caption: Quick Looks (Recent Data)
   chapters:
     - glob: notebooks/quicklooks/*
+- caption: Case Study
+  chapters:
+    - glob: notebooks/case-study/*
 - caption: Ambient Weather Stations
   chapters:
     - glob: notebooks/ambient-weather/*
