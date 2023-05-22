@@ -13,7 +13,6 @@ jobs:
       environment_name: instrument-cookbooks-dev
       environment_file: environment.yml
       path_to_notebooks: ./
-
   link-check:
     if: ${{ github.repository_owner == 'CROCUS-Urban' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
@@ -21,3 +20,6 @@ jobs:
       environment_name: instrument-cookbooks-dev
       environment_file: environment.yml
       path_to_notebooks: ./
+  deploy:
+    needs: build
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
