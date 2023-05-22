@@ -16,8 +16,10 @@ dependencies:
   - pandas<2.0
   - fiona
   - hvplot
+  - imageio
   - pip
   - pip:
     - -r doc-requirements.txt
     - ambient-api
     - sage-data-client
+    - nexradaws
