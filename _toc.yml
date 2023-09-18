@@ -4,6 +4,9 @@ parts:
 - caption: Data Access
   chapters:
     - file: data-access.md
+- caption: CROCUS Level 1 Node
+  chapters:
+   - glob: notebooks/crocus_level1_node/*
 - caption: Quick Looks (Recent Data)
   chapters:
     - glob: notebooks/quicklooks/*
@@ -16,6 +19,3 @@ parts:
 - caption: Doppler Lidar
   chapters:
    - glob: notebooks/doppler-lidar/*
-- caption: CROCUS Level 1 Node
-  chapters:
-   - glob: notebooks/crocus_level1_node/*
