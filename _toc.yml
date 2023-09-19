@@ -7,6 +7,9 @@ parts:
 - caption: CROCUS Level 1 Node
   chapters:
    - glob: notebooks/crocus_level1_node/*
+- caption: Contributing
+  chapters:
+   - file: notebooks/notebook-template
 - caption: Quick Looks (Recent Data)
   chapters:
     - glob: notebooks/quicklooks/*
