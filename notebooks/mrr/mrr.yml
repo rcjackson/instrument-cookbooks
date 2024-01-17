@@ -1,0 +1,14 @@
+name: mrr_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - arm_pyart
+  - matplotlib
+  - pip
+  - cmweather
+  - siphon
+  - xarray
+  - numpy
+  - jupyterlab
