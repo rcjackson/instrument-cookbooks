@@ -22,3 +22,6 @@ parts:
 - caption: Doppler Lidar
   chapters:
    - glob: notebooks/doppler-lidar/*
+- caption: Micro Rain Radar
+  chapters:
+   - glob: notebooks/mrr/*
