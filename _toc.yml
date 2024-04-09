@@ -4,18 +4,18 @@ parts:
 - caption: Data Access
   chapters:
     - file: data-access.md
-- caption: CROCUS Level 1 Node
-  chapters:
-   - glob: notebooks/crocus_level1_node/*
 - caption: Contributing
   chapters:
    - file: notebooks/notebook-template
 - caption: Quick Looks (Recent Data)
   chapters:
     - glob: notebooks/quicklooks/*
-- caption: Case Study
+- caption: External Datasets
   chapters:
-    - glob: notebooks/case-study/*
+    - glob: notebooks/external-datasets/*
+- caption: CROCUS Level 1 Node
+  chapters:
+   - glob: notebooks/crocus_level1_node/*
 - caption: Ambient Weather Stations
   chapters:
     - glob: notebooks/ambient-weather/*
@@ -25,3 +25,6 @@ parts:
 - caption: Micro Rain Radar
   chapters:
    - glob: notebooks/mrr/*
+- caption: Case Study
+  chapters:
+    - glob: notebooks/case-study/*

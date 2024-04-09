@@ -13,14 +13,16 @@ dependencies:
   - dask
   - distributed
   - xarray
-  - pandas<2.0
+  - pandas
   - fiona
   - hvplot
   - imageio
+  - seaborn
   - pip
   - pip:
     - -r doc-requirements.txt
     - ambient-api
+    - windrose
     - sage-data-client
     - nexradaws
     - sphinxcontrib-applehelp==1.0.7
