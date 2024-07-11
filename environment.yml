@@ -5,6 +5,7 @@ channels:
   - pyviz
 dependencies:
   - arm_pyart
+  - siphon
   - act-atmos
   - matplotlib
   - jupyterlab
