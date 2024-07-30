@@ -19,6 +19,7 @@ dependencies:
   - hvplot
   - imageio
   - seaborn
+  - pywavelets
   - pip
   - pip:
     - -r doc-requirements.txt
@@ -26,4 +27,4 @@ dependencies:
     - windrose
     - sage-data-client
     - nexradaws
-    - PythonMETAR
+    - git+https://github.com/mgcarre/PythonMETAR
